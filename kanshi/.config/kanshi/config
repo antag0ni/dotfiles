@@ -1,0 +1,30 @@
+# PROFILE 1: Docked Open (Laptop + AOC 200Hz + Samsung Portrait)
+# Layout: Laptop (0,0) -> AOC (1536,0) -> Samsung (3456,0)
+profile docked_open {
+    # Laptop on the left
+    output eDP-1 enable mode 1920x1200 scale 1.25 position 0,0
+    
+    # AOC in the middle at 200 Hz
+    output DP-9 enable mode 1920x1080@200.000 position 1536,0
+    
+    # Samsung on the right, rotated vertically (portrait)
+    # Note: use "transform 90" or "transform 270" depending on physical rotation
+    output DP-7 enable mode 1920x1080@60.000 position 3456,0 transform 90
+}
+
+# PROFILE 2: Docked Closed (Clamshell mode)
+# Layout: AOC (0,0) -> Samsung (1920,0)
+profile docked_closed {
+    output eDP-1 disable
+    
+    # AOC becomes the main monitor on the left
+    output DP-9 enable mode 1920x1080@200.000 position 0,0
+    
+    # Samsung is placed to the right of the AOC
+    output DP-7 enable mode 1920x1080@60.000 position 1920,0 transform 90
+}
+
+# PROFILE 3: Only Laptop (Standalone)
+profile laptop {
+    output eDP-1 enable mode 1920x1200 scale 1.25 position 0,0
+}
