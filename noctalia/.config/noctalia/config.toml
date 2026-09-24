@@ -1,5 +1,3 @@
-config_version = 14
-
 [bar.default]
 end = [
     "media",
@@ -216,16 +214,16 @@ community_palette = "Jiva Paper"
 source = "community"
 
 [wallpaper.default]
-path = "~/.local/state/noctalia/images/nix-wallpaper-nineish-dark-gray.png"
+path = "~/.config/noctalia/images/nix-wallpaper-nineish-dark-gray.png"
 
 [wallpaper.last]
-path = "~/.local/state/noctalia/images/nix-wallpaper-nineish-dark-gray.png"
+path = "~/.config/noctalia/images/nix-wallpaper-nineish-dark-gray.png"
 
 [wallpaper.monitors.Virtual-1]
-path = "~/.local/state/noctalia/images/nix-wallpaper-nineish-dark-gray.png"
+path = "~/.config/noctalia/images/nix-wallpaper-nineish-dark-gray.png"
 
 [widget.control-center]
-custom_image = "~/.local/state/noctalia/images/nixos.svg"
+custom_image = "~/.config/noctalia/images/nixos.svg"
 custom_image_colorize = true
 scale = 1.1500000000000001
 
