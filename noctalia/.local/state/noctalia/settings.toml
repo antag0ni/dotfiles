@@ -1,0 +1,100 @@
+config_version = 14
+
+[bar.default]
+end = [
+    "media",
+    "spacer_3",
+    "tray",
+    "notifications",
+    "clipboard",
+    "network",
+    "bluetooth",
+    "volume",
+    "brightness",
+    "battery",
+    "session"
+]
+start = [ "control-center", "spacer_2", "launcher", "wallpaper", "workspaces" ]
+
+[lockscreen_widgets]
+enabled = true
+schema_version = 2
+widget_order = [ "lockscreen-login-box@Virtual-1", "lockscreen-widget-0000000000000001" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@Virtual-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 959.0
+    cy = 752.22454833984375
+    output = "Virtual-1"
+    placement_height = 920.0
+    placement_width = 1918.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@Virtual-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    box_height = 176.0
+    box_width = 368.0
+    cx = 959.0
+    cy = 275.99996948242188
+    output = "Virtual-1"
+    placement_height = 920.0
+    placement_width = 1918.0
+    rotation = 0.0
+    type = "clock"
+
+[shell.panel]
+launcher_placement = "attached"
+
+[theme]
+builtin = "Catppuccin"
+community_palette = "Jiva Paper"
+source = "community"
+
+[wallpaper.default]
+path = "~/.local/state/noctalia/images/nix-wallpaper-nineish-dark-gray.png"
+
+[wallpaper.last]
+path = "~/.local/state/noctalia/images/nix-wallpaper-nineish-dark-gray.png"
+
+[wallpaper.monitors.Virtual-1]
+path = "~/.local/state/noctalia/images/nix-wallpaper-nineish-dark-gray.png"
+
+[widget.control-center]
+custom_image = "~/.local/state/noctalia/images/nixos.svg"
+custom_image_colorize = true
+scale = 1.1500000000000001
+
+[widget.launcher]
+enabled = false
+
+[widget.spacer_2]
+length = 10
+type = "spacer"
+
+[widget.spacer_3]
+type = "spacer"
+
+[widget.wallpaper]
+enabled = false
