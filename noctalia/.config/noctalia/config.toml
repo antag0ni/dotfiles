@@ -230,6 +230,13 @@ scale = 1.1500000000000001
 [widget.launcher]
 enabled = false
 
+[widget.media]
+hide_when_no_media = true
+max_length = 130
+
+[widget.network]
+show_label = false
+
 [widget.spacer_2]
 length = 10
 type = "spacer"
