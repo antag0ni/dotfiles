@@ -5,7 +5,8 @@
   # IMPORTS
   # =========================================
   imports = [
-    ./hardware-configuration.nix
+    # ./hardware-configuration.nix
+    /etc/nixos/hardware-configuration.nix
   ];
 
   # =========================================
@@ -13,6 +14,7 @@
   # =========================================
   boot.loader.grub.enable = true;
   boot.loader.grub.useOSProber = true;
+  boot.loader.grub.default = "saved";
   boot.loader.grub.device = "nodev";
   boot.loader.grub.efiSupport = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -24,6 +26,7 @@
   # Pass custom AMD debug mask to the kernel via GRUB
   boot.kernelParams = [ "amdgpu.dcdebugmask=0x10" ];
   hardware.alsa.enablePersistence = true;
+  time.hardwareClockInLocalTime = true;
 
   # =========================================
   # NETWORKING
@@ -60,6 +63,8 @@
   # DESKTOP ENVIRONMENT
   # =========================================
   services.displayManager.gdm.enable = true;
+  services.displayManager.autoLogin.enable = true;
+  services.displayManager.autoLogin.user = "antagoni";
   # services.desktopManager.gnome.enable = true;
 
   # =========================================
