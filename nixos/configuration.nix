@@ -135,7 +135,8 @@
     unzip
     brightnessctl
     stow
-    kdePackages.dolphin
+    nautilus
+    kdePackages.okular
   ];
 
   # =========================================
