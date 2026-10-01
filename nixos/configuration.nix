@@ -110,11 +110,13 @@
   ];
 
   programs = {
+    # ESSENTIALS
     niri.enable = true;
     noctalia = {
       enable = true;
       recommendedServices.enable = true;
     };
+
     firefox.enable = true;
     neovim.enable = true;
     tmux.enable = true;
@@ -122,21 +124,25 @@
   };
 
   environment.systemPackages = with pkgs; [
+    # ESSENTIALS
     vim
+    git
+    stow
+    xwayland-satellite
+    wl-clipboard
+    alacritty
+    brightnessctl
+
     wget
     alsa-utils
     fastfetch
-    alacritty
-    git
     btop
-    xwayland-satellite
-    wl-clipboard
     curl
     unzip
-    brightnessctl
-    stow
     nautilus
     kdePackages.okular
+    cmatrix
+    obsidian
   ];
 
   # =========================================
