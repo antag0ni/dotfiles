@@ -80,10 +80,11 @@ prefer-no-csd
 // =============================================================================
 layout {
     // Solid background color
-    background-color "#3c3836"
+    // background-color "#3c3836"
+    background-color "#000000"
 
     // Space between windows and around the screen edge.
-    gaps 8
+    gaps 0
 
     // When to centre a column after focus changes: "never" | "always" | "on-overflow".
     center-focused-column "never"
@@ -110,7 +111,7 @@ layout {
 
     // Always-visible border around windows.
     border {
-        width 2
+        width 1
         active-color "#555555"
         inactive-color "#1f1f1f"
         urgent-color "#9b0000"      // windows requesting attention
@@ -388,3 +389,4 @@ binds {
     // Turn monitors off; any input wakes them.
     Mod+Shift+P { power-off-monitors; }
 }
+
