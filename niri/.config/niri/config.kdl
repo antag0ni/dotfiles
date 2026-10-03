@@ -79,8 +79,11 @@ prefer-no-csd
 // All sizes are in logical (scaled) pixels unless stated otherwise.
 // =============================================================================
 layout {
+    // Solid background color
+    background-color "#3c3836"
+
     // Space between windows and around the screen edge.
-    gaps 2
+    gaps 8
 
     // When to centre a column after focus changes: "never" | "always" | "on-overflow".
     center-focused-column "never"
@@ -108,8 +111,8 @@ layout {
     // Always-visible border around windows.
     border {
         width 2
-        active-color "#aaaaaa"
-        inactive-color "#505050"
+        active-color "#555555"
+        inactive-color "#1f1f1f"
         urgent-color "#9b0000"      // windows requesting attention
     }
 
